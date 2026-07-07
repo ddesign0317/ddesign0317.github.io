@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDApps Apps</title>
+
+    <meta name="description" content="Android applications developed by HDApps.">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Inter,Segoe UI,Arial,sans-serif;
+        }
+
+        body{
+            background:#0F1115;
+            color:#fff;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:40px;
+        }
+
+        .container{
+            width:100%;
+            max-width:900px;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#A0A8B8;
+            margin-bottom:40px;
+            line-height:1.6;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#171B22;
+            border:1px solid #2A3240;
+            border-radius:16px;
+            padding:24px;
+            transition:.2s;
+        }
+
+        .card:hover{
+            transform:translateY(-3px);
+            border-color:#4F8CFF;
+        }
+
+        h2{
+            margin-bottom:12px;
+        }
+
+        .desc{
+            color:#A0A8B8;
+            min-height:60px;
+        }
+
+        a{
+            display:inline-block;
+            margin-top:18px;
+            color:#4F8CFF;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        footer{
+            margin-top:50px;
+            color:#777;
+            text-align:center;
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>👋 HDApps Apps</h1>
+
+<p>
+Building simple, offline-first Android apps that help people every day.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h2>🏃 Motionary</h2>
+<div class="desc">
+Exercise library with high-quality animations and workout guidance.
+</div>
+<a href="https://play.google.com/store/apps/details?id=com.unithandy.motionary" target="_blank" rel="noopener">Get on Play Store</a>
+</div>
+
+<div class="card">
+<h2>✅ TapTide</h2>
+<div class="desc">
+Minimal habit tracker focused on consistency instead of streak pressure.
+</div>
+<a href="https://play.google.com/store/apps/details?id=com.unithandy.taptide" target="_blank" rel="noopener">Get on Play Store</a>
+</div>
+
+<div class="card">
+<h2>🧠 DailyBrain</h2>
+<div class="desc">
+Daily puzzle game currently under development.
+</div>
+<a href="./dailybrain/">Coming Soon</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 HDApps
+</footer>
+
+</div>
+
+</body>
+</html>
