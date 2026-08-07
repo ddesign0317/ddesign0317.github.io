@@ -1,7 +1,7 @@
 {
   "taptide": {
-    "latestVersion": "0.1.35",
-    "minVersion": "0.1.35",
+    "latestVersion": "0.1.36",
+    "minVersion": "0.1.36",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.taptide",
     "note": "Bug fixes and performance improvements"
