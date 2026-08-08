@@ -60,7 +60,11 @@ We may update this policy if app functionality changes. Continued use of the app
 
 If you have questions about this privacy policy, contact us at:
 
-**Email:** *(your email address)*
+**Email:** ddesign0317@gmail.com
+
+---
+
+> Hosted HTML version (use in Google Play Console): `https://ddesign0317.github.io/motionary-privacy.html`
 
 ---
 

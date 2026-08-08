@@ -59,8 +59,10 @@ If this policy changes, the "Last updated" date at the top will be revised. Cont
 
 ## 11. Contact
 
-For questions about this privacy policy, please contact the developer via the Google Play Store listing.
+For questions about this privacy policy, contact: **ddesign0317@gmail.com**
 
 ---
 
 © 2026 TapTide. All rights reserved.
+
+> Hosted HTML version (use in Google Play Console): `https://ddesign0317.github.io/taptide-privacy.html`
