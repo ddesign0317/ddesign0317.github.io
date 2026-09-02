@@ -8,14 +8,14 @@
   },
   "taptide": {
     "latestVersion": "0.1.51",
-    "storeVersion": "0.1.49",
+    "storeVersion": "0.1.51",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.taptide",
     "note": "Bug fixes and performance improvements"
   },
   "motionary": {
     "latestVersion": "1.0.79",
-    "storeVersion": "1.0.78",
+    "storeVersion": "1.0.79",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.motionary",
     "note": "Bug fixes and performance improvements"
