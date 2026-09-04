@@ -1,14 +1,14 @@
 {
   "dailybrain": {
     "latestVersion": "1.0.83",
-    "storeVersion": "1.0.81",
+    "storeVersion": "1.0.83",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.dailybrain.app",
     "note": "Bug fixes and performance improvements"
   },
   "taptide": {
     "latestVersion": "0.1.52",
-    "storeVersion": "0.1.51",
+    "storeVersion": "0.1.52",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.taptide",
     "note": "Bug fixes and performance improvements"
