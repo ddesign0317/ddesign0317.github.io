@@ -1,7 +1,7 @@
 {
   "dailybrain": {
     "latestVersion": "1.0.86",
-    "storeVersion": "1.0.84",
+    "storeVersion": "1.0.86",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.dailybrain.app",
     "note": "Bug fixes and performance improvements"
