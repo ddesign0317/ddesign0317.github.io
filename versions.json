@@ -1,21 +1,21 @@
 {
   "dailybrain": {
     "latestVersion": "1.0.87",
-    "storeVersion": "1.0.86",
+    "storeVersion": "1.0.87",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.dailybrain.app",
     "note": "Bug fixes and performance improvements"
   },
   "taptide": {
     "latestVersion": "0.1.56",
-    "storeVersion": "0.1.55",
+    "storeVersion": "0.1.56",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.taptide",
     "note": "Bug fixes and performance improvements"
   },
   "motionary": {
     "latestVersion": "1.0.89",
-    "storeVersion": "1.0.88",
+    "storeVersion": "1.0.89",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.motionary",
     "note": "Bug fixes and performance improvements"
