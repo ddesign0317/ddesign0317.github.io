@@ -1,7 +1,7 @@
 {
   "dailybrain": {
     "latestVersion": "1.0.96",
-    "storeVersion": "1.0.88",
+    "storeVersion": "1.0.96",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.dailybrain.app",
     "note": "Bug fixes and performance improvements"
@@ -15,7 +15,7 @@
   },
   "motionary": {
     "latestVersion": "1.0.101",
-    "storeVersion": "1.0.90",
+    "storeVersion": "1.0.101",
     "force": false,
     "url": "https://play.google.com/store/apps/details?id=com.unithandy.motionary",
     "note": "Bug fixes and performance improvements"
