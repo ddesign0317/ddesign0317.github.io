@@ -1,113 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — TapTide</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-         max-width: 700px; margin: 40px auto; padding: 0 20px;
-         color: #222; line-height: 1.7; }
-  h1 { font-size: 26px; } h2 { font-size: 19px; margin-top: 32px; }
-  p, li { margin: 12px 0; } a { color: #0066cc; }
-  ul { padding-left: 24px; } .updated { color: #666; font-size: 14px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — TapTide | HDApps</title>
+
+    <meta name="description" content="Privacy Policy for TapTide, developed by HDApps.">
+    <meta name="theme-color" content="#0F1115">
+
+    <link rel="icon" type="image/png" href="./assets/branding/hdapps-favicon.png">
+    <link rel="apple-touch-icon" href="./assets/branding/hdapps-favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background: #0F1115;
+            color: #A0A8B8;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 17, 21, 0.94);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid #2A3240;
+            padding: 14px 20px;
+        }
+
+        .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #4F8CFF;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 10px;
+            background: #171B22;
+            border: 1px solid #2A3240;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover {
+            background: #1E2430;
+            border-color: #4F8CFF;
+            color: #fff;
+            transform: translateX(-2px);
+        }
+
+        .nav-logo img {
+            height: 28px;
+            width: auto;
+            display: block;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .nav-logo:hover img {
+            opacity: 1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 20px 60px;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin: 16px 0 8px;
+        }
+
+        .updated {
+            font-size: 14px;
+            color: #6B7280;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin: 36px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #1E2430;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: #A0A8B8;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: #E2E8F0;
+        }
+
+        code {
+            background: #171B22;
+            border: 1px solid #2A3240;
+            color: #4F8CFF;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        a {
+            color: #4F8CFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .bottom-back {
+            margin: 40px 0 20px;
+        }
+
+        .other-policies {
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: #171B22;
+            border: 1px solid #2A3240;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #A0A8B8;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .other-policies span.label {
+            font-weight: 600;
+            color: #E2E8F0;
+        }
+
+        .other-policies span.dot {
+            color: #5A6475;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #777;
+            text-align: center;
+            font-size: 14px;
+            padding-bottom: 30px;
+        }
+
+        .footer-logo {
+            height: 32px;
+            width: auto;
+            display: block;
+            margin: 0 auto 18px;
+            opacity: .92;
+        }
+
+        .social {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 0;
+            color: #A0A8B8;
+            font-weight: 500;
+        }
+
+        .social:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social img {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+
+        .copy {
+            margin-top: 16px;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-<h1>TapTide — Privacy Policy</h1>
-<p class="updated"><strong>Effective date:</strong> September 23, 2026</p>
-<p>TapTide is developed by Ankit Dholakiya (HDApps), India.</p>
 
-<h2>1. Information You Create (Stored on Your Device)</h2>
-<p>Your routines, habits, progress, streaks, notes, and daily wins are stored on
-your device in a local SQLite database. This content is never transmitted to us
-— there is no cloud sync, no external backup, and no server that receives it.
-Deleting the app removes all of it permanently.</p>
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="./index.html" class="back-btn" aria-label="Back to HDApps Home">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back to HDApps</span>
+        </a>
+        <a href="./index.html" class="nav-logo" aria-label="HDApps Home">
+            <img src="./assets/branding/hdapps-logo-small.png" alt="HDApps">
+        </a>
+    </div>
+</nav>
 
-<h2>2. No Account Required</h2>
-<p>You do not need an account, sign-in, or email address to use TapTide. There
-is no registration, no login, and no cloud sync.</p>
+<main class="container">
+    <h1>TapTide — Privacy Policy</h1>
+    <p class="updated"><strong>Effective date:</strong> September 23, 2026</p>
+    <p>TapTide is developed by Ankit Dholakiya (HDApps), India.</p>
 
-<h2>3. Information Collected Automatically</h2>
-<p>TapTide uses <strong>Google Firebase Analytics</strong> to measure aggregate,
-non-identifying usage of the app, and <strong>Google Firebase Crashlytics</strong>
-to collect crash and error diagnostics so that defects can be fixed.</p>
-<ul>
-  <li><strong>Usage events</strong> — for example onboarding completed, routine
-  created (with its category and reminder period), routine completed, reminder
-  enabled, badge earned, and whether a system permission prompt was granted or
-  denied.</li>
-  <li><strong>Diagnostic data</strong> — crash reports and error traces, together
-  with device model, operating system version, and app version.</li>
-</ul>
-<p>We do not read or transmit the content you enter: your routine names, your
-notes, and your daily-win text stay on your device. TapTide also periodically
-requests a small public version file over HTTPS in order to check for updates;
-that request contains no personal information.</p>
+    <h2>1. Information You Create (Stored on Your Device)</h2>
+    <p>Your routines, habits, progress, streaks, notes, and daily wins are stored on
+    your device in a local SQLite database. This content is never transmitted to us
+    — there is no cloud sync, no external backup, and no server that receives it.
+    Deleting the app removes all of it permanently.</p>
 
-<h2>4. Advertisements and Consent (AdMob)</h2>
-<p>TapTide displays advertisements served by <strong>Google AdMob</strong>:</p>
-<ul>
-  <li><strong>Banner ads</strong> at the bottom of the screen</li>
-  <li>An optional <strong>interstitial ad</strong> once per day when all habits are completed</li>
-  <li>An optional <strong>rewarded ad</strong> to support the app (user-initiated)</li>
-</ul>
-<p>AdMob and its partners may collect device identifiers (advertising ID), IP
-address, and usage data in order to serve and measure ads. Where required,
-TapTide requests your consent before serving personalized ads; you can review or
-change that choice at any time from <strong>Settings &rarr; Privacy Options</strong>
-inside the app. You can also opt out of personalized ads in your device settings:</p>
-<ul>
-  <li>Android: Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</li>
-</ul>
-<p>See Google's Privacy Policy for details:
-<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+    <h2>2. No Account Required</h2>
+    <p>You do not need an account, sign-in, or email address to use TapTide. There
+    is no registration, no login, and no cloud sync.</p>
 
-<h2>5. Notifications</h2>
-<p>TapTide uses <strong>local</strong> notifications to remind you of your
-routines. Notifications are scheduled on your device and no notification data
-is sent to any server.</p>
+    <h2>3. Information Collected Automatically</h2>
+    <p>TapTide uses <strong>Google Firebase Analytics</strong> to measure aggregate,
+    non-identifying usage of the app, and <strong>Google Firebase Crashlytics</strong>
+    to collect crash and error diagnostics so that defects can be fixed.</p>
+    <ul>
+      <li><strong>Usage events</strong> — for example onboarding completed, routine
+      created (with its category and reminder period), routine completed, reminder
+      enabled, badge earned, and whether a system permission prompt was granted or
+      denied.</li>
+      <li><strong>Diagnostic data</strong> — crash reports and error traces, together
+      with device model, operating system version, and app version.</li>
+    </ul>
+    <p>We do not read or transmit the content you enter: your routine names, your
+    notes, and your daily-win text stay on your device. TapTide also periodically
+    requests a small public version file over HTTPS in order to check for updates;
+    that request contains no personal information.</p>
 
-<h2>6. Device Permissions</h2>
-<ul>
-  <li><code>INTERNET</code> — ads, analytics, and update checks</li>
-  <li><code>POST_NOTIFICATIONS</code> — local habit reminders (Android 13+)</li>
-  <li><code>VIBRATE</code> — haptic feedback</li>
-  <li><code>AD_ID</code> (provided by Google Play services) — advertising identifier used by AdMob</li>
-</ul>
+    <h2>4. Advertisements and Consent (AdMob)</h2>
+    <p>TapTide displays advertisements served by <strong>Google AdMob</strong>:</p>
+    <ul>
+      <li><strong>Banner ads</strong> at the bottom of the screen</li>
+      <li>An optional <strong>interstitial ad</strong> once per day when all habits are completed</li>
+      <li>An optional <strong>rewarded ad</strong> to support the app (user-initiated)</li>
+    </ul>
+    <p>AdMob and its partners may collect device identifiers (advertising ID), IP
+    address, and usage data in order to serve and measure ads. Where required,
+    TapTide requests your consent before serving personalized ads; you can review or
+    change that choice at any time from <strong>Settings &rarr; Privacy Options</strong>
+    inside the app. You can also opt out of personalized ads in your device settings:</p>
+    <ul>
+      <li>Android: Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</li>
+    </ul>
+    <p>See Google's Privacy Policy for details:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
 
-<h2>7. Third-Party Services</h2>
-<ul>
-  <li><strong>Google AdMob</strong> — serves ads; subject to Google's Privacy Policy</li>
-  <li><strong>Google Firebase Analytics</strong> — aggregate usage measurement</li>
-  <li><strong>Google Firebase Crashlytics</strong> — crash and error diagnostics</li>
-  <li><strong>expo-notifications</strong> — local notification scheduling; no data transmitted</li>
-  <li><strong>Expo / React Native</strong> — application framework</li>
-</ul>
-<p>These providers process data in accordance with their own privacy policies.
-We do not sell your personal information.</p>
+    <h2>5. Notifications</h2>
+    <p>TapTide uses <strong>local</strong> notifications to remind you of your
+    routines. Notifications are scheduled on your device and no notification data
+    is sent to any server.</p>
 
-<h2>8. Your Choices and Controls</h2>
-<ul>
-  <li>Change your ad consent choice — Settings &rarr; Privacy Options</li>
-  <li>Limit ad personalization — your device settings</li>
-  <li>Turn reminders off — Settings, or your device notification settings</li>
-  <li>Remove all app data — uninstalling the app deletes everything stored locally</li>
-  <li>Request deletion of analytics or crash data associated with your app usage — email us and we will action the request</li>
-</ul>
+    <h2>6. Device Permissions</h2>
+    <ul>
+      <li><code>INTERNET</code> — ads, analytics, and update checks</li>
+      <li><code>POST_NOTIFICATIONS</code> — local habit reminders (Android 13+)</li>
+      <li><code>VIBRATE</code> — haptic feedback</li>
+      <li><code>AD_ID</code> (provided by Google Play services) — advertising identifier used by AdMob</li>
+    </ul>
 
-<h2>9. Children's Privacy</h2>
-<p>TapTide is not directed at children under 13. It does not knowingly collect
-personal information from children. If you believe a child has provided such
-information, contact us and we will delete it.</p>
+    <h2>7. Third-Party Services</h2>
+    <ul>
+      <li><strong>Google AdMob</strong> — serves ads; subject to Google's Privacy Policy</li>
+      <li><strong>Google Firebase Analytics</strong> — aggregate usage measurement</li>
+      <li><strong>Google Firebase Crashlytics</strong> — crash and error diagnostics</li>
+      <li><strong>expo-notifications</strong> — local notification scheduling; no data transmitted</li>
+      <li><strong>Expo / React Native</strong> — application framework</li>
+    </ul>
+    <p>These providers process data in accordance with their own privacy policies.
+    We do not sell your personal information.</p>
 
-<h2>10. Changes to This Policy</h2>
-<p>If this policy changes, the effective date at the top will be revised.
-Material changes will be reflected in the app as well.</p>
+    <h2>8. Your Choices and Controls</h2>
+    <ul>
+      <li>Change your ad consent choice — Settings &rarr; Privacy Options</li>
+      <li>Limit ad personalization — your device settings</li>
+      <li>Turn reminders off — Settings, or your device notification settings</li>
+      <li>Remove all app data — uninstalling the app deletes everything stored locally</li>
+      <li>Request deletion of analytics or crash data associated with your app usage — email us and we will action the request</li>
+    </ul>
 
-<h2>11. Contact</h2>
-<p>For questions or requests about this privacy policy, contact:
-<a href="mailto:ddesign0317@gmail.com">ddesign0317@gmail.com</a></p>
+    <h2>9. Children's Privacy</h2>
+    <p>TapTide is not directed at children under 13. It does not knowingly collect
+    personal information from children. If you believe a child has provided such
+    information, contact us and we will delete it.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If this policy changes, the effective date at the top will be revised.
+    Material changes will be reflected in the app as well.</p>
+
+    <h2>11. Contact</h2>
+    <p>For questions or requests about this privacy policy, contact:
+    <a href="mailto:ddesign0317@gmail.com">ddesign0317@gmail.com</a></p>
+
+    <div class="bottom-back">
+        <a href="./index.html" class="back-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back to HDApps Home</span>
+        </a>
+    </div>
+
+    <div class="other-policies">
+        <span class="label">Other Policies:</span>
+        <a href="./motionary-privacy.html">Motionary</a>
+        <span class="dot">&middot;</span>
+        <a href="./dailybrain.html">DailyBrain</a>
+    </div>
+
+    <footer>
+        <img class="footer-logo" src="./assets/branding/hdapps-logo-small.png" alt="HDApps">
+        <a class="social" href="https://www.instagram.com/hdapps07" target="_blank" rel="noopener" aria-label="Follow HDApps on Instagram at @hdapps07">
+            <img src="./assets/branding/instagram-glyph.png" alt="" width="18" height="18">
+            <span>@hdapps07</span>
+        </a>
+        <div class="copy">&copy; 2026 HDApps</div>
+    </footer>
+</main>
 
 </body>
 </html>
