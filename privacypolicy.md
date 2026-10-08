@@ -1,113 +1,98 @@
-# Privacy Policy for Motionary
+# Privacy Policy — Motionary (`com.unithandy.motionary`)
 
-**Last updated:** September 11, 2026
+**Effective date:** October 8, 2026
 
-This privacy policy describes how Motionary ("we", "our", or "the app") handles user data. It applies to the Android app **Motionary** (`com.unithandy.motionary`).
-
----
-
-## Data Collection
-
-Motionary has **no accounts and no sign-in**, and we do not operate servers. All workout history, streaks, XP, and settings are stored **locally on your device** using `AsyncStorage` (React Native's local key-value storage). This data never leaves your device.
-
-We never ask for your name, email, or phone number.
+Motionary (package ID: `com.unithandy.motionary`) is developed by HDApps ("we", "our", or "us"). This Privacy Policy explains what workout data is stored locally on your device, what data is collected and shared off-device by integrated third-party SDKs (Google AdMob, Google Firebase Analytics, and Google Firebase Crashlytics), and how you can control or delete your data.
 
 ---
 
-## Information Collected Automatically
+## 1. Workout Data You Create (Stored Locally on Your Device)
 
-Motionary uses **Google Firebase Analytics** and **Google Firebase Crashlytics** to understand how the app is used and to diagnose crashes and errors. These services collect anonymous, aggregated technical data such as:
+All of your workout plans, exercise logs, streaks, XP, and app preferences are stored locally on your device. We do not require user accounts, sign-in, name, email, or phone number, and we do not operate our own user-account servers. Uninstalling the app removes your local workout data from your device.
 
-- App version and device model
+---
+
+## 2. Google Play Data Safety Disclosure (Data Collected & Shared Off-Device)
+
+Motionary integrates third-party SDKs provided by Google (**Google Mobile Ads / AdMob**, **Google Firebase Analytics**, and **Google Firebase Crashlytics**). These SDKs automatically collect and transmit the following categories of user data off your device to Google servers:
+
+- **Device or other IDs (Collected & Shared):**
+  Includes your Android Advertising ID (`AD_ID` / AAID), Firebase Installation ID (FID), App Set ID, and device/instance identifiers.
+  *Purpose:* Collected and shared with Google AdMob and its advertising partners for advertising or marketing (serving and measuring banner, interstitial, and rewarded ads), analytics, app functionality, and fraud prevention, security, and compliance.
+- **App info and performance — Crash logs, Diagnostics & Other app performance data (Collected & Shared):**
+  Includes crash stack traces, ANR (Application Not Responding) reports, app launch/loading diagnostics, device model, OS version, and SDK performance metrics collected by Firebase Crashlytics and Google AdMob.
+  *Purpose:* Analytics, app stability/functionality, and fraud prevention.
+- **App activity — App interactions (Collected & Shared):**
+  Includes aggregate screen views, feature interaction events (such as workout started/completed counts, exercise viewed, settings changed), and advertisement views/clicks collected by Firebase Analytics and Google AdMob.
+  *Purpose:* Analytics, advertising or marketing, and app functionality.
+- **Location — Approximate location (Collected & Shared):**
+  Derived automatically from your device's IP address by Google AdMob and Google Firebase (Motionary does not request GPS or precise location permissions).
+  *Purpose:* Advertising or marketing (geographically relevant ads), analytics, and fraud prevention, security, and compliance.
+
+**Encryption in Transit:** All data collected and transmitted off your device by these SDKs is encrypted in transit using industry-standard HTTPS / TLS protocols.
+
+---
+
+## 3. Information Collected Automatically (Analytics & Crash Reporting)
+
+Motionary uses **Google Firebase Analytics** and **Google Firebase Crashlytics** to understand aggregate app usage and to diagnose crashes and errors:
+
+- Device model, operating system version, app version, and Firebase Installation ID
 - General usage events — for example workout started or completed, exercise viewed, settings changed
-- Crash reports and error traces
+- Crash reports and error stack traces
 
-We never send your name, email, or any text you enter. Motionary also periodically requests a small public version file over HTTPS to check for updates; that request contains no personal information.
-
-If you choose to report a problem with an exercise video, the app opens your own email app with a pre-written message. Nothing is sent until you send it yourself.
+Motionary also periodically requests a small public version file over HTTPS to check for updates. If you choose to report a problem with an exercise video, the app opens your own email app with a pre-written message; nothing is sent unless you send it yourself.
 
 ---
 
-## Advertising
+## 4. Advertising and Consent (Google AdMob)
 
-Motionary uses **Google AdMob** to display advertisements. Ad formats in use are:
+Motionary uses **Google AdMob** (`react-native-google-mobile-ads`) to display advertisements:
 
 - **Banner ads** at the bottom of the screen and inside the workout rest timer
 - An **interstitial ad** after a workout is completed
 - An optional **rewarded interstitial ad** when you choose to support the app (heart button)
 
-AdMob and its partners may collect device information (such as advertising ID, device type, and IP address) in order to select and measure ads. Where required, Motionary asks for your consent before serving personalized ads; you can review or change that choice at any time from **Settings → Privacy Options**.
+Google AdMob collects and shares **Device or other IDs** (including the Android Advertising ID `AD_ID`), IP address (approximate location), device information, and ad interaction data in order to select, personalize (where consented), and measure ads, and to detect fraud. Where required, Motionary asks for your consent via Google's User Messaging Platform (UMP) before serving personalized ads; you can review or change that choice at any time from **Settings → Privacy Options**.
 
-This is governed by Google's Privacy Policy:
+You can also reset, delete, or opt out of your Advertising ID via your Android device settings:
+- **Android:** Settings → Google → All services → Ads → Reset advertising ID or Delete advertising ID
 
-- [Google Privacy Policy](https://policies.google.com/privacy)
-- [AdMob Privacy Policy](https://support.google.com/admob/answer/6128543)
-
-You can also opt out of personalized ads via your device settings:
-- **Android:** Settings → Google → Ads → Opt out of Ads Personalization
+See Google's Privacy Policy: [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
 ---
 
-## Data Storage and Backup
-
-- All workout data is stored locally on your device.
-- We do not operate servers and never receive your workout data.
-- **Android device backup:** if backup is enabled in your Android / Google account settings, the operating system may copy app data to your own encrypted Google backup so it can be restored on a new phone. That backup is controlled by you and Google — we cannot access it. You can turn it off in Android Settings → System → Backup.
-- Deleting the app removes the local data. Any copy held in a system backup stays in your Google account until it expires under Google's retention policy.
-
----
-
-## Required Permissions
+## 5. Required Permissions
 
 | Permission | Purpose |
 |------------|---------|
-| `INTERNET` | Ads, analytics, and update checks |
-| `ACCESS_NETWORK_STATE` | Connectivity checks (from Google's advertising SDK) |
+| `INTERNET` & `ACCESS_NETWORK_STATE` | Required by Google AdMob and Firebase SDKs to transmit ads, analytics, crash logs, and update checks over HTTPS |
+| `com.google.android.gms.permission.AD_ID` | Allows Google AdMob and Firebase to access the Android Advertising ID (Device or other IDs) |
 | `VIBRATE` | Rest-timer and workout haptic feedback |
 | `MODIFY_AUDIO_SETTINGS` | Rest-timer beep playback |
 | `POST_NOTIFICATIONS` | Optional local workout reminders (Android 13+) |
-| `AD_ID` (from Google Play services) | Advertising identifier used by AdMob |
-
-Notifications are scheduled locally on your device. No notification data is sent to any server.
 
 ---
 
-## Third-Party Services
+## 6. Data Retention, Deletion & Your Controls
 
-- **Google AdMob** — advertising
-- **Google Firebase (Analytics & Crashlytics)** — anonymous usage statistics and crash diagnostics
-- **Expo / React Native** — application framework
-
-These providers process data in accordance with their own privacy policies. We do not sell your personal information.
-
-## Your Choices and Controls
-
-- Change your ad consent choice — Settings → Privacy Options
-- Limit ad personalization — your device settings
-- Turn reminders off — Settings, or your device notification settings
-- Remove all app data — uninstalling the app deletes everything stored locally
-- Request deletion of analytics or crash data associated with your app usage — email us and we will action the request
+- **Reset or Delete Advertising ID (Device ID):** Go to Android *Settings → Google → Ads → Delete advertising ID* (or *Reset advertising ID*).
+- **Change Ad Consent:** Open Motionary → *Settings → Privacy Options*.
+- **Delete Local Workout Data:** Uninstall Motionary or clear app storage in Android settings.
+- **Request Deletion of Analytics / Crash Data:** Email us at **support@hdapps07.com** and we will process your deletion request within 30 days.
 
 ---
 
-## Children's Privacy
+## 7. Children's Privacy
 
 Motionary is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided such information, contact us and we will delete it.
 
 ---
 
-## Changes to This Policy
+## 8. Contact
 
-This policy may be updated periodically. Changes will be reflected with a new effective date on this page, and material changes will also be shown in the app.
-
----
-
-## Contact
-
-If you have questions about this privacy policy, contact us at:
-
-**Email:** ddesign0317@gmail.com
+If you have questions about this privacy policy or your data, contact us at: **support@hdapps07.com**
 
 ---
 
-> Hosted HTML version (the canonical copy, linked from Google Play Console): `https://ddesign0317.github.io/motionary-privacy.html`
+> Hosted HTML version (the canonical copy, linked from Google Play Console): `https://hdapps07.com/motionary-privacy.html`
