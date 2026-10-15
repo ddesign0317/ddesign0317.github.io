@@ -235,5 +235,23 @@ All three apps are free and supported by ads. Privacy policies:
 
 </div>
 
+<script>
+  (function() {
+    try {
+      var search = window.location.search;
+      if (search && search.length > 1) {
+        var params = new URLSearchParams(search);
+        var ref = encodeURIComponent(params.toString());
+        var links = document.querySelectorAll('a[href*="play.google.com/store/apps/details"]');
+        links.forEach(function(a) {
+          var href = a.getAttribute('href');
+          if (href && href.indexOf('&referrer=') === -1) {
+            a.setAttribute('href', href + '&referrer=' + ref);
+          }
+        });
+      }
+    } catch (e) {}
+  })();
+</script>
 </body>
 </html>
