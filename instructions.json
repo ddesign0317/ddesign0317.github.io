@@ -1,5 +1,14 @@
 {
   "taptide": "",
   "dailybrain": "",
-  "motionary": ""
+  "motionary": "",
+  "ads": {
+    "skip": {
+      "enabled": true,
+      "maxPerDay": 2,
+      "graceDays": 3,
+      "freeSkipsPerDayInGrace": 1,
+      "savedTimeRetryPerDay": 1
+    }
+  }
 }
